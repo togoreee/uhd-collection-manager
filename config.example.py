@@ -11,7 +11,7 @@ EMBY_DB_PATH = "/volume3/docker/emby/config/data/library.db"
 TMDB_API_KEY = "你的TMDBAPIKey"
 
 # 文件路径
-MOVIES_CSV = "digiraw_movies_full_merged.csv"
+CSV_FILE = "digiraw_movies_full_merged.csv"
 LOCAL_MOVIE_CSV = "local_tmdb_path_from_emby.csv"
 EMBY_MAP_CSV = "emby_tmdb_itemid_map.csv"
 
