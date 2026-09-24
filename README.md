@@ -46,15 +46,18 @@ Emby数据库 -> 导出你的本地收藏列表
 
 浏览器打开 http://你的IP:8080/uhd_backend_paged.html
 
-## 文件说明
+## 每个文件干嘛的？
 
-- api_server.py：Flask后端API
-- uhd_backend_paged.html：前端页面
-- export_from_emby.py：从Emby导出数据
-- auto_update.sh：自动更新新电影
-- config.py：私人配置（不公开）
-- config.example.py：配置模板
-- requirements.txt：Python依赖
+| 文件 | 作用 | 你需要改吗？ |
+|------|------|-------------|
+| api_server.py | Flask后端，读CSV、处理筛选排序搜索请求 | 不用改 |
+| uhd_backend_paged.html | 前端网页，表格展示电影列表 | 不用改 |
+| export_from_emby.py | 从Emby数据库导出你的收藏列表 | 不用改 |
+| auto_update.sh | 自动检测Emby新电影，自动更新片单 | 不用改 |
+| config.py | 你的私人配置：Emby地址、TMDB Key | 要改！ |
+| config.example.py | 配置模板，照着抄就行 | 不用改 |
+| requirements.txt | Python依赖清单 | 不用改 |
+| digiraw_movies_full.csv | 完整UHD片单总表（2700+部） | 不用改 |
 
 ## License
 
